@@ -9,7 +9,7 @@ import (
 	"github.com/TheThingsNetwork/ttn/utils/errors"
 
 	ttnlog "github.com/TheThingsNetwork/go-utils/log"
-	pb_broker "github.com/TheThingsNetwork/ttn/api/broker"
+	pb_broker "github.com/TheThingsNetwork/api/broker"
 )
 
 // UplinkProcessor processes an uplink protobuf to an application-layer uplink message

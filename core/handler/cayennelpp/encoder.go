@@ -5,7 +5,7 @@ package cayennelpp
 
 import (
 	protocol "github.com/TheThingsNetwork/go-cayenne-lib/cayennelpp"
-	pb_handler "github.com/TheThingsNetwork/ttn/api/handler"
+	pb_handler "github.com/TheThingsNetwork/api/handler"
 )
 
 // Encoder is a CayenneLPP PayloadEncoder

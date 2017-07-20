@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	ttnlog "github.com/TheThingsNetwork/go-utils/log"
-	pb_broker "github.com/TheThingsNetwork/ttn/api/broker"
-	pb_handler "github.com/TheThingsNetwork/ttn/api/handler"
+	pb_broker "github.com/TheThingsNetwork/api/broker"
+	pb_handler "github.com/TheThingsNetwork/api/handler"
 	"github.com/TheThingsNetwork/ttn/core/handler/application"
 	"github.com/TheThingsNetwork/ttn/core/handler/cayennelpp"
 	"github.com/TheThingsNetwork/ttn/core/handler/device"

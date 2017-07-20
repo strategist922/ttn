@@ -12,7 +12,7 @@ import (
 	"syscall"
 
 	ttnlog "github.com/TheThingsNetwork/go-utils/log"
-	pb "github.com/TheThingsNetwork/ttn/api/handler"
+	pb "github.com/TheThingsNetwork/api/handler"
 	"github.com/TheThingsNetwork/ttn/api/pool"
 	"github.com/TheThingsNetwork/ttn/core/component"
 	"github.com/TheThingsNetwork/ttn/core/handler"

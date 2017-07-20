@@ -6,8 +6,8 @@ package util
 import (
 	"github.com/TheThingsNetwork/go-account-lib/scope"
 	ttnlog "github.com/TheThingsNetwork/go-utils/log"
-	"github.com/TheThingsNetwork/ttn/api/discovery"
-	"github.com/TheThingsNetwork/ttn/api/handler"
+	"github.com/TheThingsNetwork/api/discovery"
+	"github.com/TheThingsNetwork/api/handler"
 	"github.com/TheThingsNetwork/ttn/utils/errors"
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
@@ -20,7 +20,7 @@ func GetHandlerManager(ctx ttnlog.Interface, appID string) (*grpc.ClientConn, *h
 	defer dscConn.Close()
 	handlerAnnouncement, err := client.Get(GetContext(ctx), &discovery.GetRequest{
 		ServiceName: "handler",
-		Id:          viper.GetString("handler-id"),
+		ID:          viper.GetString("handler-id"),
 	})
 	if err != nil {
 		ctx.WithError(errors.FromGRPCError(err)).Fatal("Could not find Handler")
